@@ -6,6 +6,25 @@ FinAgent is a multi-agent system that analyses financial documents (10-K, 10-Q, 
 
 ---
 
+## Screenshots
+
+### Sidebar — document upload
+![Sidebar upload](assets/screenshot_sidebar.png)
+
+### Main UI — query input
+![Main UI](assets/screenshot_main.png)
+
+### Report tab — M&A-style report
+![Report tab](assets/screenshot_report.png)
+
+### Data tab — structured JSON output
+![Data tab](assets/screenshot_data.png)
+
+### Agent Trace tab — execution log
+![Agent Trace tab](assets/screenshot_trace.png)
+
+---
+
 ## Architecture
 
 ```
