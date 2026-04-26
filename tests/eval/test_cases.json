@@ -1,0 +1,58 @@
+[
+  {
+    "id": "tc_001",
+    "query": "Analyze the financial performance of the company",
+    "expected_intent": "financial_only",
+    "expected_agents": ["document_parser", "financial_analyst", "report_writer"],
+    "expected_kpis": ["revenue", "gross_margin_pct", "net_income"],
+    "expected_report_sections": ["Executive Summary", "Financial Performance"]
+  },
+  {
+    "id": "tc_002",
+    "query": "What are the main risks and red flags in this 10-K?",
+    "expected_intent": "risk_only",
+    "expected_agents": ["document_parser", "risk_assessor", "report_writer"],
+    "expected_kpis": [],
+    "expected_report_sections": ["Executive Summary", "Risk Assessment"]
+  },
+  {
+    "id": "tc_003",
+    "query": "Compare this company against its competitors and assess its competitive position",
+    "expected_intent": "compare",
+    "expected_agents": ["document_parser", "financial_analyst", "risk_assessor", "competitor_analyst", "report_writer"],
+    "expected_kpis": ["revenue", "gross_margin_pct", "operating_margin_pct"],
+    "expected_report_sections": ["Executive Summary", "Financial Performance", "Competitive Position"]
+  },
+  {
+    "id": "tc_004",
+    "query": "Give me a full analysis including financials, risks, and competitive landscape",
+    "expected_intent": "full_analysis",
+    "expected_agents": ["document_parser", "financial_analyst", "risk_assessor", "report_writer"],
+    "expected_kpis": ["revenue", "gross_margin_pct", "net_income", "ebitda"],
+    "expected_report_sections": ["Executive Summary", "Financial Performance", "Risk Assessment", "Investment Considerations"]
+  },
+  {
+    "id": "tc_005",
+    "query": "Identify litigation risks, debt covenant concerns, and regulatory exposure",
+    "expected_intent": "risk_only",
+    "expected_agents": ["document_parser", "risk_assessor", "report_writer"],
+    "expected_kpis": [],
+    "expected_report_sections": ["Executive Summary", "Risk Assessment"]
+  },
+  {
+    "id": "tc_006",
+    "query": "What is the revenue growth, EBITDA, and debt-to-equity ratio?",
+    "expected_intent": "financial_only",
+    "expected_agents": ["document_parser", "financial_analyst", "report_writer"],
+    "expected_kpis": ["revenue", "ebitda", "debt_equity_ratio"],
+    "expected_report_sections": ["Executive Summary", "Financial Performance"]
+  },
+  {
+    "id": "tc_007",
+    "query": "How does this company compare to competitors and what are the M&A investment considerations?",
+    "expected_intent": "compare",
+    "expected_agents": ["document_parser", "financial_analyst", "risk_assessor", "competitor_analyst", "report_writer"],
+    "expected_kpis": ["revenue", "gross_margin_pct", "net_income"],
+    "expected_report_sections": ["Executive Summary", "Competitive Position", "Investment Considerations"]
+  }
+]
